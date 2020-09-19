@@ -26,6 +26,10 @@ module.exports = {
                     'css-loader'
                 ],
                 include: [path.resolve(__dirname, 'src')]
+            },
+            {
+                 test: /\.(png|jpe?g|gif)$/i,
+                 use: 'file-loader' 
             }
         ]   
     },

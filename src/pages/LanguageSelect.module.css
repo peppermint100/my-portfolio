@@ -41,11 +41,11 @@
     text-align: center;
     font-size: 1.2em;
     cursor: pointer;
+    transition: all .7s ease-in-out;
 }
 
 
 .select button:hover{
-   transition: all .4s ease-in-out;
    background-color: #8f8e8e; 
    color: #fff;
 }

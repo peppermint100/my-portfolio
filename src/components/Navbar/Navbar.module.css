@@ -1,0 +1,38 @@
+.container{
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   height: 130px;
+}
+
+.container > section{
+    align-self: center;
+    margin: 0 100px;
+}
+
+.logo{
+    font-size: 2em;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+aside > button{
+    cursor: pointer;
+}
+
+.contact {
+    display: block;
+    color: #65AFFF;
+    border: 3px solid #65AFFF;
+    padding: .5em .8em;
+    border-radius: 16px;
+
+}
+.menu {
+    font-size: 1.3em;
+    margin-left: 4em;
+    color: #6F6F6F;
+}
+
+
+

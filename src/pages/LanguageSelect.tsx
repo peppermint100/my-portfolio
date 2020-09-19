@@ -10,11 +10,10 @@ interface Props {
     setLang: (lang: string) => void
 }
 
-
 const LanguageSelect:React.FC<Props> = ({ setLang }) => {
-    const sectionFadeIn = useFadeIn<HTMLElement>({ delay : .3})
-    const KoreanButtonFadeIn = useFadeIn<HTMLButtonElement>({ delay : .8})
-    const EnglishButtonFadeIn = useFadeIn<HTMLButtonElement>({ delay : .8})
+    const sectionFadeIn = useFadeIn<HTMLElement>({ delay : .4, duration: .8})
+    const KoreanButtonFadeIn = useFadeIn<HTMLButtonElement>({ delay : .8, duration: .8})
+    const EnglishButtonFadeIn = useFadeIn<HTMLButtonElement>({ delay : .8, duration: .8})
   
     return (
         <div className={styles.container}>

@@ -17,7 +17,7 @@ const App = () => {
 
     return (
       <>
-        { !lang
+        { !lang && !window.localStorage.getItem('language')
           ? <LanguageSelect setLang={setLang} /> 
           : <Routes />
         }
