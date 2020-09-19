@@ -9,9 +9,7 @@ const DefaultContainer = ({ children } : { children: any }) => {
                 <Navbar />
             </nav>
                 <main className={styles.content}>
-                    <>
                         {children}
-                    </>
                 </main>
             <footer>
                 <Footer />
