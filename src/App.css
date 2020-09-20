@@ -26,6 +26,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	font-family: 'Open Sans', sans-serif;
 }
 ol, ul {
 	list-style: none;
@@ -45,4 +46,22 @@ table {
 
 button{
 	all: unset;
+}
+a{
+	text-decoration: none;
+}
+
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+/* font size media query */
+@media screen and (max-width: 1160px){
+	html {
+		font-size: 70%;
+	}
+}
+@media screen and (max-width: 776px){
+	html {
+		font-size: 40%;
+	}
 }

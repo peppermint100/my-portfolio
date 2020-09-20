@@ -7,18 +7,16 @@
 
 .container > section{
     align-self: center;
-    margin: 0 100px;
+    /* margin: 0 3em; */
 }
 
 .logo{
-    font-size: 2em;
+    font-size: 2rem;
     font-weight: 600;
     cursor: pointer;
+    margin-left: 3em;
 }
 
-aside > button{
-    cursor: pointer;
-}
 
 .contact {
     display: block;
@@ -26,13 +24,59 @@ aside > button{
     border: 3px solid #65AFFF;
     padding: .5em .8em;
     border-radius: 16px;
-
 }
+
 .menu {
-    font-size: 1.3em;
+    cursor: pointer;
+    font-size: 1.3rem;
     margin-left: 4em;
     color: #6F6F6F;
 }
 
+.hamburger {
+    display: none;
+    margin-right: 3em;
+}
 
+.closeButton {
+    opacity: 0;
+    transition: opacity .6s ease-in-out;
+    pointer-events: none;
+    z-index: 700;
+}
+
+.sideBar {
+    display: flex;
+    margin-right: 3em;
+}
+
+@media screen and (max-width: 768px){
+    .hamburger {
+        display: block;
+    }
+
+    .sideBar{
+        position: fixed;
+        background-color: #ecf0f1;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        z-index: 600;
+        clip-path: circle(1000px at 90% -120%);
+        -webkit-clip-path: circle(1000px at 90% -120%);
+        transition: all 1.2s ease-in-out;
+
+    }
+
+    .menu {
+        color: rgb(119, 119, 119);
+        font-size: 5rem;
+        margin: 1rem;
+    }
+}
 
