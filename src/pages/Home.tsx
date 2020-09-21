@@ -1,20 +1,18 @@
 import React from 'react'
-import { DefaultContainer, JumboImage } from '../components'
+import { About, DefaultContainer, JumboImage } from '../components'
 
 const Home = () => {
     return (
+        // navbar and footer needs to be containerizated
         <DefaultContainer>
-            <JumboImage />
-        {/* navbar  */}
-        {/* jumbotron */}
-        {/* about */}
-        {/* skillset */}
-        {/* projects */}
-        {/* blog post */}
-        {/* footer */}
+            {/* jumbotron */}
+                <JumboImage />
+            {/* about */}
+                <About />
+            {/* skillset */}
+            {/* projects */}
+            {/* blog post */}
 
-        {/* navbar and footer needs to be containerizated */}
-        {/* contain language */}
         </DefaultContainer>
     )
 }

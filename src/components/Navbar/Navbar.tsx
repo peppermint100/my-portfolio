@@ -11,6 +11,7 @@ const Navbar = () => {
 
     const openSideBar = () => {
         if(sideBarRef.current && closeButtonRef.current){
+            sideBarRef.current.style.transition="all 1.2s ease-in-out"
             sideBarRef.current.style.clipPath = "circle(1000px at 70% 20%)"
             closeButtonRef.current.style.opacity= "1"
             closeButtonRef.current.style.pointerEvents= "all"
@@ -19,7 +20,8 @@ const Navbar = () => {
 
     const closeSideBar = () => {
         if(sideBarRef.current && closeButtonRef.current){
-            sideBarRef.current.style.clipPath = "circle(1000px at 90% -120%)"
+            // sideBarRef.current.style.transition="none"
+            sideBarRef.current.style.clipPath = "circle(1000px at 90% -140%)"
             closeButtonRef.current.style.opacity= "0"
             closeButtonRef.current.style.pointerEvents= "none"
         }

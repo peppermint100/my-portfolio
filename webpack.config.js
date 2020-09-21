@@ -28,14 +28,15 @@ module.exports = {
                 include: [path.resolve(__dirname, 'src')]
             },
             {
-                 test: /\.(png|jpe?g|gif)$/i,
+                 test: /\.(png|jpe?g|gif|ico)$/i,
                  use: 'file-loader' 
             }
         ]   
     },
     plugins:[
         new HtmlWebpackPlugin({
-            template: "./public/index.html"
+            template: "./public/index.html",
+            favicon: "./assets/favicon/favicon-32x32.png",
         })
     ],
     devtool: 'source-map',

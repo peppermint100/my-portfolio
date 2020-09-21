@@ -3,11 +3,13 @@ Pepper's Portfolio web site
 
 
 ## Todo
-- [ ] Component Structure 
-- [ ] Component Layout 
-- [ ] Navbar design and features 
+- [x] Component Structure 
+- [x] Component Layout 
+- [x] Navbar design and features 
 - [ ] Jumbotron scroll animation 
 - [ ] Favicon, Title
 - [ ] React Helmet
-- [ ] ... 
-- [ ] ...
+- [ ] About 
+- [ ] Skillset
+- [ ] Projects
+- [ ] Blog Posts

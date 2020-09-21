@@ -7,6 +7,8 @@
 
 .image {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .helloMessage {
@@ -17,4 +19,11 @@
     left: 50%;
     transform: translate(-50%, -50%);
     color: #fff;
+}
+
+@media screen and (max-width: 776px){
+    .container {
+        height: 100vh;
+    }
+
 }

@@ -50,7 +50,7 @@
     margin-right: 3em;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 776px){
     .hamburger {
         display: block;
     }
@@ -68,9 +68,7 @@
         align-items: center;
         z-index: 600;
         clip-path: circle(1000px at 90% -120%);
-        -webkit-clip-path: circle(1000px at 90% -120%);
-        transition: all 1.2s ease-in-out;
-
+        -webkit-clip-path: circle(1000px at 90% -140%);
     }
 
     .menu {
