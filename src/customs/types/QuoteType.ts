@@ -1,5 +1,5 @@
-export default interface QuoteType{
-    korean: string
-    english: string
+export default interface QuoteType<T>{
+    korean: T
+    english: T
 }
 

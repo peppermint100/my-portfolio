@@ -1,0 +1,63 @@
+.container {
+    width: 700px;
+    background-color:  #ECECEC;
+    color: #555555;
+    min-height: 700px;
+}
+
+.innerContainer {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.boxHeading {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 2rem;
+}
+
+.skillDetails {
+    
+}
+
+.title {
+    font-size: 1.7rem;
+    margin: 40px 20px;
+    font-weight: 600;
+}
+
+.description {
+    margin: 10px 0;
+}
+
+.description p{
+    margin: 1rem;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+}
+
+.moreInfo {
+    align-self: center;
+    margin: 2rem;
+}
+
+.moreInfoButton {
+    text-align: center;
+    padding: 1rem 5rem;
+    border: 2px solid #7DA2FF;
+    color: #7DA2FF;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1160px){
+    .container {
+        width: 500px;
+    }
+     
+}
+@media screen and (max-width: 776px){
+}
+

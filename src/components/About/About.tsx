@@ -15,23 +15,23 @@ const About = () => {
     const faceFadeIn = useIntersection<HTMLElement>({ delay: 1.8, duration: 1.3})
 
 
-    const aboutQuote_1: QuoteType = {
+    const aboutQuote_1: QuoteType<string> = {
         korean: "안녕하세요.",
         english:"Hello"
     }
-    const aboutQuote_2: QuoteType = {
+    const aboutQuote_2: QuoteType<string> = {
         korean: "새로운 기술을 배우는 게",
         english:"I'm InGyu Lee"
     }
-    const aboutQuote_3: QuoteType = {
+    const aboutQuote_3: QuoteType<string> = {
         korean: "가장 즐거운",
         english:"And"
     }
-    const aboutQuote_4: QuoteType = {
+    const aboutQuote_4: QuoteType<string> = {
         korean: "개발자",
         english:"I looove to learn"
     }
-    const aboutQuote_5: QuoteType = {
+    const aboutQuote_5: QuoteType<string> = {
         korean: "이인규입니다.",
         english:"New Stuff"
     }

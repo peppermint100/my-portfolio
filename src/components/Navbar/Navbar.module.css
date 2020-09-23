@@ -67,8 +67,8 @@
         justify-content: space-around;
         align-items: center;
         z-index: 600;
-        clip-path: circle(1000px at 90% -120%);
-        -webkit-clip-path: circle(1000px at 90% -140%);
+        clip-path: circle(1000px at 90% -180%);
+        -webkit-clip-path: circle(1000px at 90% -180%);
     }
 
     .menu {

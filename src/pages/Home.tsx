@@ -1,5 +1,5 @@
 import React from 'react'
-import { About, DefaultContainer, JumboImage } from '../components'
+import { About, DefaultContainer, JumboImage, SkillSet } from '../components'
 
 const Home = () => {
     return (
@@ -10,6 +10,7 @@ const Home = () => {
             {/* about */}
                 <About />
             {/* skillset */}
+                <SkillSet />
             {/* projects */}
             {/* blog post */}
 

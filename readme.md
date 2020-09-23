@@ -7,9 +7,9 @@ Pepper's Portfolio web site
 - [x] Component Layout 
 - [x] Navbar design and features 
 - [ ] Jumbotron scroll animation 
-- [ ] Favicon, Title
-- [ ] React Helmet
-- [ ] About 
+- [x] Favicon, Title
+- [x] React Helmet
+- [x] About 
 - [ ] Skillset
 - [ ] Projects
 - [ ] Blog Posts

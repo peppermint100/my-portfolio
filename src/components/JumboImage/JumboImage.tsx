@@ -4,7 +4,7 @@ import QuoteType from '../../customs/types/QuoteType'
 import jumboImage from "./../../../assets/img/5.jpg"
 import styles from "./JumboImage.module.css"
 
-const quote: QuoteType = {
+const quote: QuoteType<string> = {
     korean: "이인규의 웹 이력서입니다.",
     english: "Hi I'm InGyu Lee. and I'm a Web Developer"
 }
@@ -15,7 +15,7 @@ const JumboImage = () => {
         <div className={styles.container}>
             <img alt="main-image" className={styles.image} src={jumboImage} />
             <div className={styles.helloMessage}>
-                {helloQuote}
+                ✋  {helloQuote}
             </div>
         </div>
     )

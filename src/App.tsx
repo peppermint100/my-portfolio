@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import LanguageSelect from './pages/LanguageSelect'
 import Routes from './Routes'
 import "./App.css"
@@ -8,12 +8,19 @@ import { RootReducerType } from './redux/RootReducer'
 
 const App = () => {
   const dispatch = useDispatch()
+  const localLang = window.localStorage.getItem('language')  
   const setLang = (language: string) =>{
        window.localStorage.setItem('language', language) 
        dispatch(setLanguage(language))
     }
 
     const lang = useSelector((state: RootReducerType) => state.LanguageReducer) 
+
+    useEffect(() => {
+      if(!lang && localLang){
+        setLang(localLang)  
+      }
+    }, [])
 
     return (
       <>

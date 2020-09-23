@@ -8,15 +8,15 @@ import QuoteType from '../../customs/types/QuoteType'
 
 const Footer = () => {
 
-    const githubQuote:QuoteType = {
+    const githubQuote:QuoteType<string> = {
         korean: "깃허브",
         english: "Github"
     }
-    const mediumQuote:QuoteType = {
+    const mediumQuote:QuoteType<string> = {
             korean: "블로그",
             english: "Blog"
         }
-    const coverLetterQuote:QuoteType = {
+    const coverLetterQuote:QuoteType<string> = {
             korean: "이력서",
             english: "Resume"
         }
