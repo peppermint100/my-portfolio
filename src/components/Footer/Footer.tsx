@@ -29,18 +29,18 @@ const Footer = () => {
         <div className={styles.container}>
             <div className={styles.innerContainer}>
                 <section className={styles.links}>
-                    <div className={styles.linkInfo}>
+                    <a className={styles.linkInfo} target="_blank" href="https://github.com/peppermint100?tab=repositories">
                         <FontAwesomeIcon icon={faGithub} size="3x" />
-                        <a target="_blank" className={styles.link} href="https://github.com/peppermint100?tab=repositories">{githubText}</a>
-                    </div>
-                    <div className={styles.linkInfo}>
+                        <a className={styles.link}>{githubText}</a>
+                    </a>
+                    <a className={styles.linkInfo} target="_blank" href="https://medium.com/@krpeppermint100">
                         <FontAwesomeIcon icon={faMedium} size="3x" />
-                        <a target="_blank" className={styles.link} href="https://medium.com/@krpeppermint100">{mediumText}</a>
-                    </div>
-                    <div className={styles.linkInfo}>
+                        <a className={styles.link}>{mediumText}</a>
+                    </a>
+                    <a className={styles.linkInfo} target="_blank" href="https://www.notion.so/In-Gyu-Lee-s-Cover-Letter-b936735b9f5648b59f0f6c76edbd5c8c">
                         <FontAwesomeIcon icon={faEnvelopeOpenText} size="3x" />
-                        <a target="_blank" className={styles.link} href="https://www.notion.so/In-Gyu-Lee-s-Cover-Letter-b936735b9f5648b59f0f6c76edbd5c8c">{coverLetterText}</a>
-                    </div>
+                        <a className={styles.link}>{coverLetterText}</a>
+                    </a>
                 </section>
                 <section className={styles.copyrights}>
                     designed and developed by peppermint100 ⓒ Lee In Gyu

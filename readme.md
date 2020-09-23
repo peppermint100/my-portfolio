@@ -10,6 +10,15 @@ Pepper's Portfolio web site
 - [x] Favicon, Title
 - [x] React Helmet
 - [x] About 
-- [ ] Skillset
-- [ ] Projects
+- [x] Skillset
+- [x] Footer Icon href
+- [x] Projects
+- [ ] Skillset and more button
+- [x] jumbo image english one line
+- [ ] logo design
+- [ ] Fill Lorem blanks with useQuote 
+- [ ] Get Projects Images
+- [ ] Skill and more link 
+- [ ] useinteractions from bottom fadein 
+- [ ] Blog post componentt 
 - [ ] Blog Posts

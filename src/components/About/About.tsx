@@ -6,11 +6,11 @@ import QuoteType from '../../customs/types/QuoteType'
 import useIntersection from '../../customs/animations/useIntersection'
 
 const About = () => {
-    const textFadeIn_1 = useIntersection<HTMLParagraphElement>({ delay: .6, duration: 1.3})
-    const textFadeIn_2 = useIntersection<HTMLParagraphElement>({ delay: 1, duration: 1.3})
-    const textFadeIn_3 = useIntersection<HTMLParagraphElement>({ delay: 1.5, duration: 1.3})
-    const textFadeIn_4 = useIntersection<HTMLParagraphElement>({ delay: 1.5, duration: 1.3})
-    const textFadeIn_5 = useIntersection<HTMLParagraphElement>({ delay: 1.5, duration: 1.3})
+    const textFadeIn_1 = useIntersection<HTMLParagraphElement>({ delay: .4, duration: 1.3})
+    const textFadeIn_2 = useIntersection<HTMLParagraphElement>({ delay: .8, duration: 1.3})
+    const textFadeIn_3 = useIntersection<HTMLParagraphElement>({ delay: 1.2, duration: 1.3})
+    const textFadeIn_4 = useIntersection<HTMLParagraphElement>({ delay: 1.2, duration: 1.3})
+    const textFadeIn_5 = useIntersection<HTMLParagraphElement>({ delay: 1.2, duration: 1.3})
 
     const faceFadeIn = useIntersection<HTMLElement>({ delay: 1.8, duration: 1.3})
 
