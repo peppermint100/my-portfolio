@@ -5,11 +5,9 @@
     margin-bottom: 5rem;
     background-color: #fff;
     border-radius: 4px;
-    transform: translate(0, 25%);
+    transform: translateY(50%);
 }
 
-.imgSection {
-}
 .imgSection img {
     padding: 3rem;
     width: 90%;
@@ -51,6 +49,11 @@
 }
 
 .projectLink {
+    flex: .7;
+}
+
+.projectLink li {
+    display: inline;
     flex: .7;
 }
 

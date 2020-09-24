@@ -3,6 +3,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React, { useEffect, useRef } from 'react'
 import styles from './Navbar.module.css'
 import useWindowSize from "./../../customs/animations/useWindowSize"
+import { Link } from 'react-router-dom'
+import svg from "./../../../assets/logo.svg"
 
 
 const Navbar = () => {
@@ -38,7 +40,9 @@ const Navbar = () => {
 
     return (
         <div className={styles.container}>
-            <section className={styles.logo}>{"< PEPPERMINT100 />"}</section>
+            <section className={styles.logo}>
+                <img src={svg} alt="logo" />
+            </section>
             <section className={styles.hamburger} onClick={openSideBar} >
                 <FontAwesomeIcon icon={faBars} size="3x"/>
             </section>
@@ -50,7 +54,7 @@ const Navbar = () => {
                         <button className={styles.menu}>Stacks</button>
                         <button className={styles.menu}>Projects</button>
                         <button className={styles.menu}>
-                            <span className={styles.contact}>Contact</span>
+                            <span className={styles.contact}><Link to={"/contact"}>Contact</Link></span>
                         </button>
             </section>
         </div>

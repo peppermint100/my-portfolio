@@ -31,6 +31,9 @@ body {
 ol, ul {
 	list-style: none;
 }
+li{
+	list-style: none;
+}
 blockquote, q {
 	quotes: none;
 }
@@ -53,6 +56,7 @@ a{
 
 /* fonts */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&family=Noto+Sans:wght@700&family=Open+Sans:ital,wght@1,700&display=swap');
 
 /* font size media query */
 @media screen and (max-width: 1160px){

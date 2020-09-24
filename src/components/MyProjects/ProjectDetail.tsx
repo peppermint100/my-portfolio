@@ -3,9 +3,8 @@ import useIntersection from '../../customs/animations/useIntersection'
 import { ProjectDetailProps, ProjectLink, Stack } from '../../customs/types/StackType'
 import styles from "./ProjectDetail.module.css"
 
-
 const Project: React.FC<ProjectDetailProps> = ({ img, title, description, stacks, links}) => {
-    const projectBoxInteraction = useIntersection<HTMLDivElement>({ delay: .8, duration: 1, direction: true })
+    const projectBoxInteraction = useIntersection<HTMLDivElement>({ slide: true, delay: .5, duration: 1 })
 
     return (
         <div className={styles.container} {...projectBoxInteraction}>
@@ -18,7 +17,7 @@ const Project: React.FC<ProjectDetailProps> = ({ img, title, description, stacks
                 <div className={styles.stacks}>
                     <ul>
                     {stacks.map((stack:Stack) => (
-                        <li style={{border: `2px solid ${stack.color}`, color: `${stack.color}`}}>
+                        <li key={stack.id} style={{border: `2px solid ${stack.color}`, color: `${stack.color}`}}>
                             {stack.name}
                         </li>
                     ))}
@@ -26,9 +25,9 @@ const Project: React.FC<ProjectDetailProps> = ({ img, title, description, stacks
                 </div>
                 <div className={styles.projectLink}>
                     {links.map((link:ProjectLink) => (
-                        <>
+                        <li key={link.id}>
                             <a href={link.link} target="_blank"># {link.content}</a>
-                        </>
+                        </li>
                     ))}
                 </div>
             </section>

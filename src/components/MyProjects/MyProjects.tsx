@@ -10,8 +10,8 @@ const MyProjects = () => {
        img: projectImg,
        title: "My First Project",
        description: "It was my first project with html, css, javascript I had lots of fun making this",
-       stacks: [{ name: "HTML", color: "red"}, { name: "CSS", color: "green"}], 
-       links: [ { content: "Code in Github", link: "https://www.naver.com"}, { content: "Code in Github", link: "https://www.naver.com"}]
+       stacks: [{id:1, name: "HTML", color: "red"}, { id:2, name: "CSS", color: "green"}], 
+       links: [ { id: 1, content: "Code in Github", link: "https://www.naver.com"}, { id:2, content: "Code in Github", link: "https://www.naver.com"}]
     }    
 
     const projectsHelperText = useQuote<string>({

@@ -8,10 +8,8 @@ import useInterection from "./../../customs/animations/useIntersection"
 import { Detail } from '../../customs/types/SkillType'
 import useQuote from '../../customs/quote/useQuote'
 
-
-
 const SkillSet = () => {
-    const headingIntersection = useInterection<HTMLElement>({ delay: 1, duration: 1 })
+    const headingIntersection = useInterection<HTMLElement>({ delay: 1, duration: 1.5 })
     const skillHeading = useQuote<string>({
         korean: "저는 이러한 것들을 공부했어요.",
         english: "These are What I Learned."
@@ -31,21 +29,25 @@ const SkillSet = () => {
         ]})
 
     const skill: Detail = {
+        id: 1,
         skillName: "React",
         description: skill_description 
     }
 
     const skill2: Detail = {
+        id: 2,
         skillName: "React",
         description: skill_description
     }
 
     const skill3: Detail = {
+        id: 3,
         skillName: "React",
         description: skill_description
     }
 
     const skill4: Detail = {
+        id: 4,
         skillName: "React",
         description: skill_description
     }

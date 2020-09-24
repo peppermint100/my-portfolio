@@ -17,16 +17,16 @@ const SkillBox:React.FC<Props> = ({ title, details, moreInfo}) => {
                 </section>
                 <section className={styles.skillDetails}>
                     { details?.map( (detail: Detail) => (
-                        <>
+                        <ul key={detail.id}>
                             <div className={styles.title}>{detail.skillName}</div>
                             <div className={styles.description}>{
-                                detail.description.map((description => (
-                                    <p>
+                                detail.description.map(((description, idx) => (
+                                    <li key={idx}>
                                         ◼ {description}
-                                    </p>
+                                    </li>
                                 )))
                             }</div>
-                        </>
+                        </ul>
                     ))}
 
                 </section>

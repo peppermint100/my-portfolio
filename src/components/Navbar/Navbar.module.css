@@ -10,11 +10,8 @@
     /* margin: 0 3em; */
 }
 
-.logo{
-    font-size: 2rem;
-    font-weight: 600;
-    cursor: pointer;
-    margin-left: 3em;
+.logo img{
+    width: 22rem;
 }
 
 
@@ -31,6 +28,10 @@
     font-size: 1.3rem;
     margin-left: 4em;
     color: #6F6F6F;
+}
+
+.menu span a {
+    color: #65AFFF;
 }
 
 .hamburger {

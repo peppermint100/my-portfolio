@@ -31,15 +31,15 @@ const Footer = () => {
                 <section className={styles.links}>
                     <a className={styles.linkInfo} target="_blank" href="https://github.com/peppermint100?tab=repositories">
                         <FontAwesomeIcon icon={faGithub} size="3x" />
-                        <a className={styles.link}>{githubText}</a>
+                        <pre className={styles.link}>{githubText}</pre>
                     </a>
                     <a className={styles.linkInfo} target="_blank" href="https://medium.com/@krpeppermint100">
                         <FontAwesomeIcon icon={faMedium} size="3x" />
-                        <a className={styles.link}>{mediumText}</a>
+                        <pre className={styles.link}>{mediumText}</pre>
                     </a>
                     <a className={styles.linkInfo} target="_blank" href="https://www.notion.so/In-Gyu-Lee-s-Cover-Letter-b936735b9f5648b59f0f6c76edbd5c8c">
                         <FontAwesomeIcon icon={faEnvelopeOpenText} size="3x" />
-                        <a className={styles.link}>{coverLetterText}</a>
+                        <pre className={styles.link}>{coverLetterText}</pre>
                     </a>
                 </section>
                 <section className={styles.copyrights}>

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import styles from "./About.module.css"
 import img from "./../../../assets/img/face.jpg"
 import useQuote from '../../customs/quote/useQuote'
@@ -6,14 +6,13 @@ import QuoteType from '../../customs/types/QuoteType'
 import useIntersection from '../../customs/animations/useIntersection'
 
 const About = () => {
-    const textFadeIn_1 = useIntersection<HTMLParagraphElement>({ delay: .4, duration: 1.3})
+    const textFadeIn_1 = useIntersection<HTMLParagraphElement>({ delay: .6, duration: 1.3})
     const textFadeIn_2 = useIntersection<HTMLParagraphElement>({ delay: .8, duration: 1.3})
     const textFadeIn_3 = useIntersection<HTMLParagraphElement>({ delay: 1.2, duration: 1.3})
-    const textFadeIn_4 = useIntersection<HTMLParagraphElement>({ delay: 1.2, duration: 1.3})
-    const textFadeIn_5 = useIntersection<HTMLParagraphElement>({ delay: 1.2, duration: 1.3})
+    const textFadeIn_4 = useIntersection<HTMLParagraphElement>({ delay: 1.3, duration: 1.3})
+    const textFadeIn_5 = useIntersection<HTMLParagraphElement>({ delay: 1.4, duration: 1.3})
 
-    const faceFadeIn = useIntersection<HTMLElement>({ delay: 1.8, duration: 1.3})
-
+    const faceFadeIn = useIntersection<HTMLElement>({ delay: 1.3, duration: 1.6})
 
     const aboutQuote_1: QuoteType<string> = {
         korean: "안녕하세요.",
@@ -42,12 +41,8 @@ const About = () => {
     const aboutText_4 = useQuote(aboutQuote_4)
     const aboutText_5 = useQuote(aboutQuote_5)
 
-    useEffect(() => {
-        
-    })
-
     return (
-        <div className={styles.container}>
+        <div className={styles.container} >
             <section className={styles.aboutText}>
                 <div className={styles.textBox}>
                     <p {...textFadeIn_1}>{aboutText_1}</p>

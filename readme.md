@@ -13,12 +13,21 @@ Pepper's Portfolio web site
 - [x] Skillset
 - [x] Footer Icon href
 - [x] Projects
-- [ ] Skillset and more button
 - [x] jumbo image english one line
-- [ ] logo design
-- [ ] Fill Lorem blanks with useQuote 
+
+- [x] add key to every map method
+
+- [x] logo design
+
+- [ ] Blog post component 
+- [ ] get blog post info
+- [ ] Blog Posts
+
 - [ ] Get Projects Images
 - [ ] Skill and more link 
-- [ ] useinteractions from bottom fadein 
-- [ ] Blog post componentt 
-- [ ] Blog Posts
+- [x] useinteractions from bottom fadein 
+
+- [ ] Fill Lorem blanks with useQuote 
+- [ ] Skillset and more button
+
+- [ ] contact page
