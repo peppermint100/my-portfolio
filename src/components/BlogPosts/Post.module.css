@@ -1,17 +1,18 @@
 .container {
-    border-radius: 5px;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-    display: flex;
+       display: flex;
     flex-direction: column;
-    width: 450px;
-    height: 600px;
-    transform: translateY(-3rem);
+    width: 400px;
+    height: 400px;
+    transform: translateY(-4rem);
 }
 
-
 .imgSection {
-    flex: 2;
+    flex: 4;
     display: flex;
+    border-radius: 5px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    position: relative;
+    overflow: hidden;
 }
 
 .imgSection img {
@@ -23,39 +24,47 @@
     align-self: center;
 }
 
-.postDetailSection  {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-}
-
 .title {
     font-size: 22px;
     font-weight: 600;
-    width: 70%;
+    width: 90%;
     cursor: pointer;
+    position: absolute;
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+    opacity: 0;
+    z-index: 500;
+    pointer-events: none;
 }
 
 .title a {
-    color: #000;
+    color: #fff;
 }
 
-.title a:hover {
-    text-decoration: underline;
+.curtain {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #000;
+    opacity: 0;
+    z-index: 300;
 }
 
-.content {
-    font-size: 18px;
-    color: #646464;
-    width: 80%;
+.curtain:hover{
+    transition: opacity .3s ease-in;
+    opacity: .8; 
 }
 
-@media screen and (max-width: 1160px){
-
+.curtain:hover ~ .title {
+    transition: opacity .3s ease-in;
+    opacity: 1;
+    cursor: pointer;
 }
 
-@media screen and (max-width: 776px){
-
+.curtain:hover ~ img {
+    transition: transform .4s ease-in-out;
+    transform: scale(1.2);
 }
+

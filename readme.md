@@ -22,6 +22,8 @@ Pepper's Portfolio web site
 - [x] Blog post component 
 - [x] Blog Posts
 
+- [ ] message for enligsh viewers in blog component
+
 - [ ] Get Projects Images
 - [ ] Skill and more link 
 - [ ] get blog post info

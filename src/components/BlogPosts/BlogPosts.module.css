@@ -1,5 +1,4 @@
 .container {
-    background-color: #ECECEC;
 }
 
 .blogPostsIntro {
@@ -7,6 +6,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: #ECECEC;
     color: #555555;
     padding: 10rem;
 }
@@ -24,6 +24,7 @@
 }
 
 .postContainer {
+    width: 80%;
     margin: 0 auto;
     background-color: #fff;
     display: grid;

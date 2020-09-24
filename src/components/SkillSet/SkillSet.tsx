@@ -12,7 +12,7 @@ const SkillSet = () => {
     const headingIntersection = useInterection<HTMLElement>({ delay: 1, duration: 1.5 })
     const skillHeading = useQuote<string>({
         korean: "저는 이러한 것들을 공부했어요.",
-        english: "These are What I Learned."
+        english: "These are What I've Learned So far."
     })
     const skill_description = useQuote<Array<string>>({ 
         korean: [
