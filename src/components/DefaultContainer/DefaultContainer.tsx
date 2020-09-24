@@ -2,11 +2,16 @@ import React from 'react'
 import { Navbar, Footer } from '..'
 import styles from "./DefaultContainer.module.css"
 
-const DefaultContainer = ({ children } : { children: any }) => {
+interface Props {
+    children: any
+    navigations: any
+}
+
+const DefaultContainer:React.FC<Props> = ({ children, navigations } ) => {
     return (
         <div className={styles.container}>
             <nav>
-                <Navbar />
+                <Navbar navigations={navigations} />
             </nav>
                 <main className={styles.content}>
                         {children}

@@ -1,0 +1,19 @@
+.container {
+    background-color: #EE9E26;
+    height: 190px;
+    display: grid;
+    place-items: center;
+}
+
+.disclaimer {
+    width: 60%;
+    text-align: center;
+    color: #fff;
+    font-size: 1.7rem;
+}
+
+.disclaimer pre{
+    color: #fffb00;
+    display: inline; 
+    font-size: 2rem;
+}

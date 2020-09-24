@@ -5,11 +5,29 @@ import styles from './Navbar.module.css'
 import useWindowSize from "./../../customs/animations/useWindowSize"
 import { Link } from 'react-router-dom'
 import svg from "./../../../assets/logo.svg"
+import { Navigations } from '../../customs/types/NavType'
 
+interface Props{
+    navigations: Navigations
+}
 
-const Navbar = () => {
+const Navbar:React.FC<Props> = ({ navigations }) => {
     const sideBarRef = useRef<HTMLElement>(null)
     const closeButtonRef = useRef<HTMLElement>(null)
+
+    const toAbout = () => {
+       navigations.about() 
+       closeSideBar()
+    }
+    const toSkill = () => {
+       navigations.skill() 
+       closeSideBar()
+    }
+    const toProject = () => {
+       navigations.project() 
+       closeSideBar()
+    }
+
 
     const openSideBar = () => {
         if(sideBarRef.current && closeButtonRef.current){
@@ -50,9 +68,9 @@ const Navbar = () => {
                         <section className={styles.closeButton} onClick={closeSideBar} ref={closeButtonRef}>
                             <FontAwesomeIcon icon={faLocationArrow} size="3x"/>
                         </section>
-                        <button className={styles.menu}>About</button>
-                        <button className={styles.menu}>Stacks</button>
-                        <button className={styles.menu}>Projects</button>
+                        <button onClick={toAbout} className={styles.menu}>About</button>
+                        <button onClick={toSkill} className={styles.menu}>Stacks</button>
+                        <button onClick={toProject} className={styles.menu}>Projects</button>
                         <button className={styles.menu}>
                             <span className={styles.contact}><Link to={"/contact"}>Contact</Link></span>
                         </button>
