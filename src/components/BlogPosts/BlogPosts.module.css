@@ -24,6 +24,11 @@
 }
 
 .postContainer {
+    margin: 0 auto;
     background-color: #fff;
+    display: grid;
+    place-items: center;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(470px, 1fr));
 }
 
