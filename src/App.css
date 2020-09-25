@@ -61,11 +61,11 @@ a{
 /* font size media query */
 @media screen and (max-width: 1160px){
 	html {
-		font-size: 80%;
+		font-size: 85%;
 	}
 }
 @media screen and (max-width: 776px){
 	html {
-		font-size: 55%;
+		font-size: 65%;
 	}
 }

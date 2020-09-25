@@ -63,10 +63,10 @@ const SkillSet = () => {
             </section>
             <section className={styles.skillBoxContainer}>
                 <div className={styles.skillBoxes}>
-                    <SkillBox title="Front-End" details={details} moreInfo="and more" />
-                    <SkillBox title="Front-End" details={details} moreInfo="and more" />
-                    <SkillBox title="Front-End" details={details} moreInfo="and more" />
-                    <SkillBox title="Front-End" details={details} moreInfo="and more" />
+                        <SkillBox title="Front-End" details={details} moreInfo="and more" backgroundColor="#67A5F0" />
+                        <SkillBox title="Front-End" details={details} moreInfo="and more" backgroundColor="#478AC7"/>
+                        <SkillBox title="Front-End" details={details} moreInfo="and more" backgroundColor="#478AC7" />
+                        <SkillBox title="Front-End" details={details} moreInfo="and more" backgroundColor="#67A5F0" />
                 </div>
             </section>
         </div>

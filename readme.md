@@ -23,15 +23,15 @@ Pepper's Portfolio web site
 - [x] Blog Posts
 
 - [x] message for enligsh viewers in blog component
-- [ ] navbar navigation
+- [x] navbar navigation
+- [x] useinteractions from bottom fadein 
 
 - [ ] Get Projects Images
 - [ ] Skill and more link 
 - [ ] get blog post info
-- [x] useinteractions from bottom fadein 
+
 - [ ] good bye and thank you component
+- [ ] link to contact page or top button
 
-- [ ] Fill Lorem blanks with useQuote 
-- [ ] Skillset and more button
-
+- [ ] contact page design
 - [ ] contact page

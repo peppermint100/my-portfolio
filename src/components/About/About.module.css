@@ -36,6 +36,7 @@
 @media screen and (max-width: 776px){
     .container {
         flex-direction: column;
+        margin-bottom: 150px;
     }
 
     .aboutText {

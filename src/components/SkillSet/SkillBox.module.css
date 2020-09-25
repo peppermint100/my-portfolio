@@ -1,9 +1,22 @@
 .container {
-    width: 700px;
     background-color:  #ECECEC;
-    color: #555555;
-    min-height: 700px;
+    color: #fff;
 }
+
+.container:nth-child(odd) .boxHeading{
+   text-align: right;
+}
+
+.container:nth-child(odd) .title{
+   text-align: right;
+}
+.container:nth-child(odd) .description{
+   text-align: right;
+}
+
+/* .container:nth-child(odd) .moreInfo {
+    align-self: flex-end;
+} */
 
 .innerContainer {
     padding: 2rem;
@@ -12,18 +25,14 @@
 }
 
 .boxHeading {
-    text-align: center;
-    font-size: 2rem;
-    font-weight: 600;
+    text-align: left;
+    font-size: 2.2rem;
     margin: 2rem;
-}
-
-.skillDetails {
-    
+    text-decoration: underline;
 }
 
 .title {
-    font-size: 1.7rem;
+    font-size: 1.2rem;
     margin: 40px 20px;
     font-weight: 600;
 }
@@ -34,11 +43,12 @@
 
 .description li{
     margin: .8rem;
-    font-size: 1.4rem;
-    line-height: 2.4rem;
+    font-size: 1rem;
+    line-height: 1.6rem;
 }
 
 .moreInfo {
+    /* align-self: flex-start; */
     align-self: center;
     margin: 2rem;
 }
@@ -46,8 +56,8 @@
 .moreInfoButton {
     text-align: center;
     padding: 1rem 5rem;
-    border: 2px solid #3467E9;
-    color: #3467E9;
+    border: 2px solid #fff;
+    color: #fff;
     border-radius: 7px;
     cursor: pointer;
 }
@@ -59,5 +69,23 @@
      
 }
 @media screen and (max-width: 776px){
+    .container:nth-child(odd) .boxHeading{
+    text-align: center;
+    }
+
+    .container:nth-child(odd) .title{
+    text-align: left;
+    }
+    .container:nth-child(odd) .description{
+    text-align: left;
+    }
+
+    .container:nth-child(odd) .moreInfo {
+        align-self: center;
+    }
+
+    .container:nth-child(even) .moreInfo {
+        align-self: center;
+    }
 }
 

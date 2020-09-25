@@ -5,12 +5,13 @@ import styles from "./SkillBox.module.css"
 interface Props {
     title: string
     details: Detail[]
+    backgroundColor: string
     moreInfo: any
 }
 
-const SkillBox:React.FC<Props> = ({ title, details, moreInfo}) => {
+const SkillBox:React.FC<Props> = ({ title, details, moreInfo, backgroundColor}) => {
     return (
-        <div className={styles.container}>
+        <div className={styles.container} style={{backgroundColor}}>
             <div className={styles.innerContainer}>
                 <section className={styles.boxHeading}>
                     <p>{title}</p>
@@ -22,7 +23,7 @@ const SkillBox:React.FC<Props> = ({ title, details, moreInfo}) => {
                             <div className={styles.description}>{
                                 detail.description.map(((description, idx) => (
                                     <li key={idx}>
-                                        ◼ {description}
+                                         {description}
                                     </li>
                                 )))
                             }</div>
