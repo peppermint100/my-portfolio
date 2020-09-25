@@ -43,7 +43,7 @@
     opacity: 0;
     transition: opacity .6s ease-in-out;
     pointer-events: none;
-    z-index: 700;
+    z-index: 1000;
 }
 
 .sideBar {
@@ -67,14 +67,14 @@
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
-        z-index: 600;
+        z-index: 1000;
         clip-path: circle(1000px at 90% -180%);
         -webkit-clip-path: circle(1000px at 90% -180%);
     }
 
     .menu {
         color: rgb(119, 119, 119);
-        font-size: 5rem;
+        font-size: 2.5rem;
         margin: 1rem;
     }
 }

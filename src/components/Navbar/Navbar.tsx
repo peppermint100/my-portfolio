@@ -1,4 +1,4 @@
-import { faBars, faArrowUp, faLocationArrow } from '@fortawesome/free-solid-svg-icons'
+import { faBars, faLocationArrow } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React, { useEffect, useRef } from 'react'
 import styles from './Navbar.module.css'
