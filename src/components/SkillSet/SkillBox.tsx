@@ -1,41 +1,30 @@
+import { IconDefinition } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
-import { Detail } from '../../customs/types/SkillType'
 import styles from "./SkillBox.module.css"
 
 interface Props {
+    icon: IconDefinition
     title: string
-    details: Detail[]
-    moreInfo: any
+    skills: Array<string>
 }
 
-const SkillBox:React.FC<Props> = ({ title, details, moreInfo}) => {
+const SkillBox:React.FC<Props> = ({ icon, title, skills}) => {
     return (
-        <div className={styles.container}>
-            <div className={styles.innerContainer}>
-                <section className={styles.boxHeading}>
-                    <p>{title}</p>
-                </section>
-                <section className={styles.skillDetails}>
-                    { details?.map( (detail: Detail) => (
-                        <ul key={detail.id}>
-                            <div className={styles.title}>{detail.skillName}</div>
-                            <div className={styles.description}>{
-                                detail.description.map(((description, idx) => (
-                                    <li key={idx}>
-                                         {description}
-                                    </li>
-                                )))
-                            }</div>
-                        </ul>
+        <div className={styles.boxContainer}>
+            <section className={styles.icon}>
+                <FontAwesomeIcon icon={icon} size="5x" color="#f39c12" />
+            </section>
+            <section className={styles.title}>
+                {title}
+            </section>
+            <section className={styles.skills}>
+                    {skills?.map((skill: string, idx: number) => (
+                        <li key={idx}>
+                            {skill}
+                        </li>
                     ))}
-
-                </section>
-                <section className={styles.moreInfo}>
-                    <button className={styles.moreInfoButton}>
-                        {moreInfo}
-                    </button>
-                </section>
-            </div>
+            </section>
         </div>
     )
 }

@@ -12,8 +12,7 @@
     font-size: 1.7rem;
 }
 
-.disclaimer pre{
+.disclaimer span{
     color: #fffb00;
-    display: inline; 
     font-size: 2rem;
 }

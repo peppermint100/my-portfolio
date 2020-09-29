@@ -5,7 +5,7 @@ import styles from "./Post.module.css"
 
 const formatString = (target: string, limit: number) => target.substring(0, limit) + "..."
 
-const Post: React.FC<BlogPostProps> = ({ link, title, content, img}) => {
+const Post: React.FC<BlogPostProps> = ({ link, title, img}) => {
     const fadeIn = useIntersection<HTMLDivElement>({ delay: .5, duration: .8 })
 
     const toPage = () => {

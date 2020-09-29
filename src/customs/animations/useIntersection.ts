@@ -13,7 +13,6 @@ function useIntersection<T extends { style: any }>({ slide, delay, duration }: F
     useEffect(() => {
         const { current } = ref as any 
         const observer = new IntersectionObserver(( entries ) => {
-            console.log(entries)
             entries.forEach((entry:IntersectionObserverEntry) =>{
             if(current && (entry.isIntersecting || entry.intersectionRatio > 0) && !slide){ // entry.isIntersecting
                current.style.transition=`opacity ${duration}s ${delay}s ease`    

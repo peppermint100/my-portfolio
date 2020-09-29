@@ -2,7 +2,7 @@
    display: flex;
    justify-content: space-between;
    flex-wrap: wrap;
-   height: 130px;
+   height: 95px;
 }
 
 .container > section{
@@ -11,7 +11,7 @@
 }
 
 .logo img{
-    width: 22rem;
+    width: 18rem;
 }
 
 

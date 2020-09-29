@@ -28,10 +28,9 @@ Pepper's Portfolio web site
 
 - [ ] Get Projects Images
 - [ ] Skill and more link 
-- [ ] get blog post info
+- [x] get blog post info
 
-- [ ] good bye and thank you component
-- [ ] link to contact page or top button
+- [x] link to contact page or top button
 
 - [ ] contact page design
 - [ ] contact page

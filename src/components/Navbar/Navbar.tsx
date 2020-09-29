@@ -72,7 +72,7 @@ const Navbar:React.FC<Props> = ({ navigations }) => {
                         <button onClick={toSkill} className={styles.menu}>Stacks</button>
                         <button onClick={toProject} className={styles.menu}>Projects</button>
                         <button className={styles.menu}>
-                            <span className={styles.contact}><Link to={"/contact"}>Contact</Link></span>
+                            <span className={styles.contact}><a href="https://www.notion.so/f4154d57e3ad48f094ed8210e5774881" target="_blank" >Contact</a></span>
                         </button>
             </section>
         </div>

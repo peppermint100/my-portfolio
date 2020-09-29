@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react'
 import LanguageSelect from './pages/LanguageSelect'
-import Routes from './Routes'
 import "./App.css"
 import { useDispatch, useSelector } from "react-redux"
 import { setLanguage } from './redux/actions/LanguageActions'
 import { RootReducerType } from './redux/RootReducer'
+import Home from './pages/Home'
 
 const App = () => {
   const dispatch = useDispatch()
@@ -26,7 +26,7 @@ const App = () => {
       <>
         { !lang && !window.localStorage.getItem('language')
           ? <LanguageSelect setLang={setLang} /> 
-          : <Routes />
+          : <Home />
         }
       </>
     )
