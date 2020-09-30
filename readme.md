@@ -1,12 +1,10 @@
 ## Description
 Pepper's Portfolio web site
 
-
 ## Todo
 - [x] Component Structure 
 - [x] Component Layout 
 - [x] Navbar design and features 
-- [ ] Jumbotron scroll animation 
 - [x] Favicon, Title
 - [x] React Helmet
 - [x] About 
@@ -26,11 +24,10 @@ Pepper's Portfolio web site
 - [x] navbar navigation
 - [x] useinteractions from bottom fadein 
 
-- [ ] Get Projects Images
-- [ ] Skill and more link 
+- [x] Get Projects Images
+- [x] Skill and more link 
 - [x] get blog post info
 
 - [x] link to contact page or top button
 
-- [ ] contact page design
-- [ ] contact page
+
