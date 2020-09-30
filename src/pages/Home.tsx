@@ -51,7 +51,7 @@ const Home = () => {
 
     return (
         // navbar and footer needs to be containerizated
-        <div ref={topRef}>
+        <div ref={topRef} style={{width: "100vw"}}>
             <DefaultContainer navigations={navigations}>
                 <MoveToTopButton navigations={navigations} />
                 {/* jumbotron */}
