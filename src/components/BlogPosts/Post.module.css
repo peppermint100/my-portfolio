@@ -69,3 +69,9 @@
     transform: scale(1.2);
 }
 
+@media screen and (max-width: 776px){
+    .container {
+        width: 300px;
+        height: 300px;
+    }
+}
