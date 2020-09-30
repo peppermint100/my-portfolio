@@ -33,3 +33,14 @@
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
 }
 
+@media screen and (max-width: 1160px){
+    .description {
+        width: 75%;
+    }
+
+}
+@media screen and (max-width: 776px){
+.description {
+        width: 90%;
+    }
+}
