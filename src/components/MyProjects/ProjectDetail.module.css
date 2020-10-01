@@ -105,7 +105,8 @@
     }
 
     .stacks ul {
-        margin: 20px 10px;
+        margin: 20px 0;
+        transform: translateX(-7%);
     }
 
     .stacks ul li {
