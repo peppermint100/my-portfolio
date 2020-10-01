@@ -72,7 +72,7 @@ const Home = () => {
                 {/* blog post */}
                     <BlogPosts />
             </DefaultContainer>
-        </div>
+        / </div>
     )
 }
 
