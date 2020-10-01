@@ -82,10 +82,8 @@
         margin: 2rem;
         padding: 0;
     }
-    .stacks ul{
-    }
     .imgSection img {
-        width: 500px;
+        width: 450px;
     }
  
 }
@@ -103,11 +101,7 @@
 
     .imgSection img {
         padding: 3rem;
-        width: 400px;
-    }
-
-
-    .projectLink a{
+        width: 300px;
     }
 
 }
