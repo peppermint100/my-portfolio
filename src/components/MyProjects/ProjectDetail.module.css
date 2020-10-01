@@ -104,4 +104,13 @@
         width: 300px;
     }
 
+    .stacks ul {
+        margin: 20px 10px;
+    }
+
+    .stacks ul li {
+        display: inline;
+        font-size: .6rem;
+    }
+
 }
