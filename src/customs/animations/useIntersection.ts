@@ -1,4 +1,4 @@
-import { useRef, useEffect, useLayoutEffect } from "react"
+import { useRef, useEffect, CSSProperties } from "react"
 
 interface FadeInProps {
     slide?: boolean
@@ -6,7 +6,7 @@ interface FadeInProps {
     duration: number
 }
 
-function useIntersection<T extends { style: any }>({ slide, delay, duration }: FadeInProps){
+function useIntersection<T extends { style: CSSProperties }>({ slide, delay, duration }: FadeInProps){
     const ref = useRef<T>(null)
     const style = { opacity: "0"}
 
